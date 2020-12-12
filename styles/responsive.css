@@ -1,0 +1,67 @@
+@media(max-width: 1024px) {
+  header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 1.1em;
+    padding-right: 0.3rem;
+  }
+
+  #hero .hero-text h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media(max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(69, 170, 242,0.9);
+    padding-left: 1rem;
+  }
+  #hero .hero-text h1 {
+    font-size: 1.8em;
+    margin: 0.5rem 0;
+  }
+
+  #hero .hero-text p {
+    font-size: 1.4em;
+    padding: 0;
+  }
+
+  #hero .hero-buttons {
+    text-align: center;
+  }
+
+  #hero .hero-buttons .btn:first-child {
+    margin-bottom: 0.8rem;
+  }
+
+  #reviews .row .card .card-body .card-title {
+    font-size: 1.2em;
+  }
+
+  #reviews .row .card {
+    margin-bottom: 3rem;
+  }
+
+  #download .download-buttons .btn {
+    margin-bottom: 1rem;
+  }
+
+  #contact .contact-list li {
+    text-align: center;
+  }
+
+}
+
+@media(max-width: 375px) {
+  header .navbar .text-brand {
+    font-size: 1.5em;
+  }
+}
+
+@media(max-width: 320px) {
+  header .navbar .text-brand {
+    font-size: 1.3em;
+    padding-left: 0;
+  }
+  .section-title .section-title-heading {
+    font-size: 2em;
+  }
+}

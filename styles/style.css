@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Stencil+Text:wght@800&family=Roboto&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* root */
+
+:root {
+  --Anton-font: 'Anton', sans-serif;
+  --BigShouldersStencilText-font: 'Big Shoulders Stencil Text', cursive;
+  --Roboto-font: 'Roboto', sans-serif;
+  --color-white: #f5f6fa;
+}
+
+/* navbar */
+
+.navbar.active {
+  background-color: rgba(69, 170, 242,0.9);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar .text-brand {
+  text-transform: uppercase;
+  font-family: var(--BigShouldersStencilText-font);
+  font-size: 2em;
+  padding-left: 1rem;
+  color: var(--color-white);
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.3em;
+  font-family: var(--Roboto-font);
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+
+/* header .navbar .navbar-nav .nav-item:first-child .nav-link, header .navbar .navbar-nav .nav-link:hover {
+  color: #34ace0;
+} */
+/* ========== */
+
+
+/* Hero */
+
+#hero {
+  background-image: linear-gradient(to right, rgba(69, 170, 242,0.5), rgba(45, 152, 218,0.7)), url('../images/bg-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0 3rem 0;
+}
+
+#hero .row {
+  display: flex;
+  align-items: center;
+}
+
+#hero .hero-text{
+  color: var(--color-white);
+}
+
+#hero .hero-text h1 {
+  font-family: var(--Anton-font);
+  font-size: 3em;
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
+#hero .hero-text p {
+  font-family: var(--Roboto-font);
+  font-size: 1.3em;
+  padding: 1.2rem 0;
+}
+
+#hero .hero-buttons .btn {
+  border: 2px solid #48dbfb;
+  border-radius: 2rem;
+  padding: 0.6rem 1.9rem;
+  font-family: var(--Roboto-font);
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+#hero .hero-buttons .btn:hover {
+  border-color: var(--color-white);
+  background-color: var(--color-white);
+  color: #0984e3;
+}
+
+#hero .hero-buttons .btn:last-child {
+  margin-left: 1rem;
+}
+
+/* ========== */
+
+
+.section-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.section-title:hover::after {
+  width: 30%;
+}
+
+
+.section-title .section-title-heading {
+  text-align: center;
+  font-family: var(--Anton-font);
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  border-bottom: 5px solid #48dbfb;
+  width: 20%;
+  top: 3rem;
+  transition: 0.7s;
+}
+
+.section-paragraph {
+  font-size: 1.3em;
+  font-family: var(--Roboto-font);
+  padding: 1.2rem 0;
+}
+
+/* about */
+
+#about {
+  padding: 7rem 0;
+}
+
+/* =========== */
+
+/* advantages */
+
+#advantages {
+  padding: 5rem 0;
+  background-image: linear-gradient(to right, rgba(69, 170, 242,0.6), rgba(45, 152, 218,1.0));
+}
+
+#advantages .section-title-heading {
+  color: var(--color-white);
+}
+
+#advantages .row {
+  justify-content: center;
+}
+
+#advantages .row .col-md-5 {
+  margin: 2.2rem;
+  padding: 0.5rem 3rem;
+  border: 2px solid #dfe6e9;
+  text-align: center;
+  color: var(--color-white);
+}
+
+#advantages .row .col-md-5 h1 {
+  font-family: var(--Anton-font);
+  font-size: 1.8em;
+  text-transform: uppercase;
+  padding-top: 0.95rem;
+}
+
+#advantages .row .col-md-5 p {
+  font-family: var(--Roboto-font);
+  font-size: 1em;
+}
+
+/* =========== */
+
+/* features */
+
+#features {
+  padding: 5rem 0;
+}
+
+#features .feature-block-icon {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+
+#features .feature-block-text h2, #features .feature-block-text p {
+  text-align: center;
+}
+
+#features .feature-block-text h2 {
+  font-family: var(--Anton-font);
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+#features .feature-block-text p {
+  font-family: var(--Roboto-font);
+  /* text-transform: capitalize; */
+  font-size: 1em;
+}
+
+/* =========== */
+
+/* reviews */
+
+#reviews {
+  padding: 3rem 0;
+  background-image: linear-gradient(to right, rgba(69, 170, 242,0.6), rgba(45, 152, 218,1.0));
+}
+
+#reviews .section-title-heading {
+  color: var(--color-white);
+}
+
+#reviews .row {
+  margin-top: 2rem;
+  /* display: flex;
+  justify-content: center; */
+}
+
+#reviews .row .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+#reviews .row .card {
+  width: 90%;
+}
+
+#reviews .row .card .card-img-top {
+  clip-path: circle();
+  margin: 0.7rem 0 0.5rem 0;
+}
+
+#reviews .row .card .card-body {
+  text-align: center;
+  color: var(--color-white);
+  border-top-left-radius: 10rem 8rem;
+  border-top-right-radius: 10rem 8rem;
+  background-image: linear-gradient(to right, rgba(69, 170, 242,0.8), rgba(45, 152, 218,1.0));
+}
+
+#reviews .row .card .card-body .card-title {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-family: var(--Anton-font);
+}
+
+#reviews .row .card .card-body .card-text {
+  font-size: 0.95em;
+  /* text-transform: uppercase; */
+  font-family: var(--Roboto-font);
+}
+
+
+/* =========== */
+
+/* download */
+
+#download {
+  padding: 10rem 0;
+  background-image: url("../images/william-iven-SpVHcbuKi6E-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+}
+
+#download .download-buttons .row {
+  display: flex;
+  justify-content: center;
+}
+
+#download .download-buttons .row .col-md-4 {
+  text-align: center;
+}
+
+#download .download-buttons .btn {
+  border: 2px solid #54a0ff;
+  border-radius: 2rem;
+  padding: 0.6rem 1.9rem;
+  font-family: var(--Roboto-font);
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+
+#download .download-buttons .btn:hover {
+  background-color: #54a0ff;
+}
+
+/* =========== */
+
+/* footer */
+
+footer {
+  padding: 4rem 0;
+  color: var(--color-white);
+  background-image: linear-gradient(to right, rgba(69, 170, 242,0.6), rgba(45, 152, 218,0.8));
+}
+
+footer .footer-heading, footer .footer-paragraph {
+  text-align: center;
+}
+
+footer .footer-heading {
+  font-family: var(--BigShouldersStencilText-font);
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+footer .footer-paragraph {
+  font-family: var(--Roboto-font);
+  font-size: 1.5em;
+}
+
+footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .contact-list {
+  list-style: none;
+}
+
+footer .contact-list li {
+  font-family: var(--Roboto-font);
+  margin: 1rem 0;
+  font-size: 1.1em;
+}
+
+footer .contact-list li span {
+  margin-right: 0.8rem;
+}
+
+footer form small .form-text {
+  color: var(--color-white);
+}
+
+footer .socmed-icons {
+  list-style: none;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer .socmed-icons li {
+  display: inline;
+  margin: 0 1.2rem;
+}
+
+/* =========== */
